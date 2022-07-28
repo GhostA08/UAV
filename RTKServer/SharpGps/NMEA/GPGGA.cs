@@ -204,7 +204,7 @@ namespace SharpGis.SharpGps.NMEA
             double num = 0.0;
             DateTime utcNow = DateTime.UtcNow;
             string sentence = "GPGGA,";
-            sentence = sentence + utcNow.ToString("hhmmss.fff");
+            sentence = sentence + utcNow.ToString("hhmmss.fff,");
             num2 = Convert.ToDouble(Math.Abs(Lat));
             num = num2 % 1.0;
             num2 -= num;
